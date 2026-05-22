@@ -42,18 +42,18 @@ The core prediction is handled by a neural network regressor built with **Tensor
 ### Architecture Diagram
 ```mermaid
 graph LR
-    subgraph Input Features (Shape: 4)
+    subgraph input_features ["Input Features (Shape: 4)"]
         X1["JKM (Bathrooms)"]
         X2["JKT (Bedrooms)"]
         X3["LT (Land Area)"]
         X4["LB (Building Area)"]
     end
 
-    subgraph Neural Network (Dense Layer)
+    subgraph neural_network ["Neural Network (Dense Layer)"]
         N["Dense Unit (units=1, no activation)"]
     end
 
-    subgraph Output
+    subgraph output ["Output"]
         Y["Predicted Price"]
     end
 
